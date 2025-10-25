@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/bot.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "build.sh",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/bot.py"
+    }
+  ],
+  "functions": {
+    "api/bot.py": {
+      "maxDuration": 30
+    }
+  }
+}
