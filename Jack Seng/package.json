@@ -1,7 +1,0 @@
-{
-  "name": "click-counter",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "vc dev"
-  }
-}
